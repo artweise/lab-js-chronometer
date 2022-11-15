@@ -29,6 +29,16 @@ class Chronometer {
     return newValue;
   }
 
+  // another approach with slice.method
+
+  // computeTwoDigitNumber(value) {
+  //   let newValue = value.toString();
+  //   if (newValue.length === 1) {
+  //     return "0" + newValue.slice(0); // we can also return "0" + newValue, without slice. Why do we need slice??
+  //   }
+  //   return newValue;
+  // }
+
   stop() {
     clearInterval(this.intervalId);
   }
